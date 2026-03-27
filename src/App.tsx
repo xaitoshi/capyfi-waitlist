@@ -131,14 +131,14 @@ export default function App() {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 placeholder="Your email address"
-                className="w-full bg-transparent text-white placeholder-gray-500 text-sm px-3 py-2.5 rounded-xl border border-white/10 focus:border-blue-500/60 transition-colors"
+                className="w-full bg-transparent text-white placeholder-white/60 text-sm px-3 py-2.5 rounded-xl border border-white/10 focus:border-blue-500/60 transition-colors"
               />
               <input
                 type="text"
                 value={wallet}
                 onChange={e => setWallet(e.target.value)}
                 placeholder="Your wallet address (optional)"
-                className="w-full bg-transparent text-white placeholder-gray-500 text-sm px-3 py-2.5 rounded-xl border border-white/10 focus:border-blue-500/60 transition-colors font-mono text-xs"
+                className="w-full bg-transparent text-white placeholder-white/60 text-sm px-3 py-2.5 rounded-xl border border-white/10 focus:border-blue-500/60 transition-colors font-mono text-xs"
               />
               <button
                 type="submit"
@@ -164,13 +164,13 @@ export default function App() {
         )}
 
         {/* Counter */}
-        <div className="fade-in-up delay-500 mt-8 text-gray-600 text-xs">
-          <span className="text-blue-400 font-semibold">{count.toLocaleString()}</span> traders already on the waitlist
+        <div className="fade-in-up delay-500 mt-8 text-white/60 text-xs">
+          <span className="text-white font-semibold">{count.toLocaleString()}</span> traders already on the waitlist
         </div>
       </main>
 
       {/* ── Footer ── */}
-      <footer className="relative z-10 text-center py-5 text-gray-700 text-xs tracking-widest font-medium">
+      <footer className="relative z-10 text-center py-5 text-white/40 text-xs tracking-widest font-medium">
         CAPYFI &nbsp;·&nbsp; PERPETUAL DEX &nbsp;·&nbsp; COMING SOON
       </footer>
     </div>
