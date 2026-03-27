@@ -112,11 +112,17 @@ export default function App() {
         {/* Headline */}
         <h1 className="fade-in-up delay-200 text-5xl md:text-7xl font-black text-white leading-[1.05] tracking-tight mb-4 max-w-3xl">
           Trade perpetuals,<br />
-          <span className="italic font-light text-blue-200">without limits.</span>
+          <span className="italic font-light text-blue-200">max cuteness.</span>
         </h1>
 
+        {/* Live on Fluent badge */}
+        <div className="fade-in-up delay-300 flex items-center gap-2.5 bg-white/5 border border-white/15 rounded-full px-4 py-2 mb-6">
+          <img src="/fluent-logo.png" alt="Fluent" className="h-4 w-auto" />
+          <span className="text-white/70 text-xs font-medium tracking-wide">live on Fluent</span>
+        </div>
+
         {/* Subline */}
-        <p className="fade-in-up delay-300 text-gray-400 text-base md:text-lg max-w-md mb-10 leading-relaxed">
+        <p className="fade-in-up delay-400 text-gray-400 text-base md:text-lg max-w-md mb-10 leading-relaxed">
           The fastest on-chain perpetual DEX. Deep liquidity, low fees, and no KYC.
           Join the waitlist for early access.
         </p>
