@@ -123,7 +123,6 @@ export default function App() {
 
         {/* Subline */}
         <p className="fade-in-up delay-400 text-gray-400 text-base md:text-lg max-w-md mb-10 leading-relaxed">
-          The fastest on-chain perpetual DEX. Deep liquidity, low fees, and no KYC.
           Join the waitlist for early access.
         </p>
 
