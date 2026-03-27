@@ -88,12 +88,15 @@ export default function App() {
           <span className="text-white font-bold text-lg tracking-tight">capyfi</span>
         </div>
         <a
-          href="https://capyfi.xyz"
+          href="https://x.com/capyfi_xyz"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-blue-400/70 hover:text-blue-400 transition-colors font-medium tracking-wide border border-blue-500/20 px-3 py-1.5 rounded-full hover:border-blue-500/40"
+          className="text-white/60 hover:text-white transition-colors"
+          aria-label="Follow CapyFi on X"
         >
-          capyfi.xyz
+          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
         </a>
       </nav>
 
