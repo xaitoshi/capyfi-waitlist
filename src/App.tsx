@@ -42,7 +42,7 @@ export default function App() {
 
   useEffect(() => { emailRef.current?.focus(); }, []);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const em = email.trim();
     const wa = wallet.trim();
@@ -52,6 +52,11 @@ export default function App() {
     saveEntry({ email: em, wallet: wa, ts: Date.now() });
     setCount(c => c + 1);
     setSubmitted(true);
+    // Send to Google Sheet (fire and forget)
+    fetch('https://script.google.com/macros/s/AKfycbx5V7aieVSxYo8bQSy0Bm0_4qlfEa3hD7SP6womvyUtjX-SzwOai0rhWYaF8xuwyt0D/exec', {
+      method: 'POST',
+      body: JSON.stringify({ email: em, wallet: wa }),
+    }).catch(() => {});
   }
 
   return (
