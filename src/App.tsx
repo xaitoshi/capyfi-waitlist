@@ -112,7 +112,7 @@ export default function App() {
         {/* Headline */}
         <h1 className="fade-in-up delay-200 text-5xl md:text-7xl font-black text-white leading-[1.05] tracking-tight mb-4 max-w-3xl">
           Trade perpetuals,<br />
-          <span className="italic font-light text-blue-200">max cuteness.</span>
+          <span className="italic font-light text-blue-200">with max cuteness.</span>
         </h1>
 
         {/* Live on Fluent badge */}
