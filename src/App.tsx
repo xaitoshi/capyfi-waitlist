@@ -92,17 +92,27 @@ export default function App() {
           <img src="/logo.jpg" alt="CapyFi" className="w-8 h-8 rounded-lg" />
           <span className="text-white font-bold text-lg tracking-tight">capyfi</span>
         </div>
-        <a
-          href="https://x.com/capyfi_xyz"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white/60 hover:text-white transition-colors"
-          aria-label="Follow CapyFi on X"
-        >
-          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://app.capyfi.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-white font-semibold text-sm py-2 px-5 rounded-xl"
+          >
+            Launch App →
+          </a>
+          <a
+            href="https://x.com/capyfi_xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors"
+            aria-label="Follow CapyFi on X"
+          >
+            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+        </div>
       </nav>
 
       {/* ── Hero ── */}
@@ -128,7 +138,9 @@ export default function App() {
 
         {/* Subline */}
         <p className="fade-in-up delay-400 text-gray-400 text-base md:text-lg max-w-md mb-10 leading-relaxed">
-          Join the waitlist for early access.
+          Join the waitlist — early signups may receive a{' '}
+          <span className="text-blue-300 font-medium">potential surprise gift</span>{' '}
+          when mainnet arrives. 🎁
         </p>
 
         {/* Form */}
@@ -171,7 +183,7 @@ export default function App() {
             </div>
             <p className="text-white font-bold text-xl">You're on the list!</p>
             <p className="text-gray-400 text-sm max-w-xs text-center">
-              We'll reach out as soon as CapyFi launches. Tell your frens.
+              You're in early — stay tuned for a potential surprise gift when mainnet arrives. 🎁
             </p>
           </div>
         )}
